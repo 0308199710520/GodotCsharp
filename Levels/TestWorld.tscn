@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://cwgn16hattm3c"]
+
+[ext_resource type="PackedScene" uid="uid://2egljq4q66t4" path="res://Objects/TestFloor.tscn" id="1_ssryl"]
+[ext_resource type="PackedScene" uid="uid://gk4bjmao2fle" path="res://Objects/Player.tscn" id="2_wor4p"]
+
+[node name="TestWorld" type="Node3D"]
+
+[node name="TestFloor" parent="." instance=ExtResource("1_ssryl")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
+
+[node name="Player" parent="." instance=ExtResource("2_wor4p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 21.6316, 0)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.9874, 12.124)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.866025, 0.5, 0, -0.5, -0.866025, 0, 14, 0)
