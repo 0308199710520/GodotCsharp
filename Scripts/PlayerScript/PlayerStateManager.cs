@@ -8,7 +8,6 @@ public partial class PlayerStateManager : CharacterBody3D
 {
 	private readonly PlayerWalkingState _walkingState = new();
 	private BasePlayerState _currState;
-	// public CameraManager Camera;
 	
 	public override void _Ready()
 	{
@@ -34,15 +33,5 @@ public partial class PlayerStateManager : CharacterBody3D
 		_currState.LeaveState(this);
 		_currState = state;
 		_currState.EnterState(this);
-		Test();
 	}
-}
-
-public partial class PlayerStateManager
-{
-	
-	public void Test(){}
-	
-	
-	
 }
