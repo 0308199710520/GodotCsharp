@@ -13,7 +13,6 @@ public partial class PlayerStateManager : CharacterBody3D
 	{
 		GD.Print("HelloAgain");
 		base._Ready();
-		GD.Print("Hello World");
 		_currState = _walkingState;
 		_currState.Ready(this);
 	}
