@@ -11,6 +11,7 @@ public partial class PlayerStateManager : CharacterBody3D
 	
 	public override void _Ready()
 	{
+		GD.Print("HelloAgain");
 		base._Ready();
 		GD.Print("Hello World");
 		_currState = _walkingState;
